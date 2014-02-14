@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+
+<html>
+    <head>
+    <!--
+    * Theme:     Simple Gray - Quiet
+    * Author:    GuoJing
+    * Twitter:   http://twitter.com/guojing
+    * Web:       http://guojing.me
+    -->
+        <title>{Title}</title>
+        <meta charset="utf-8" />
+        <link rel='icon' href='{Favicon}' />
+        <link rel='shortcut icon' href='{Favicon}' />
+        <link rel='alternate' type='application/rss+xml' href='{RSS}' />
+        <meta name='description' content='{MetaDescription}' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+        body {
+            font:12px/1.6 arial,helvetica,sans-serif;
+            color:#4d4d4d;
+            background:#F7FAFB;
+            font-family:"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3", Georgia, "Xin Gothic", "Hiragino Sans GB", Arial, "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, 'Proxima Nova','Open Sans',sans-serif;
+            font-size:1.125em;
+            -webkit-font-smoothing:subpixel-antialiased;
+            margin:0;
+            padding:0;
+        }
+        
+        body {background: {color:Text}}
+
+        h1,h2,h3,h4,h5,h6 {
+            color:#000;
+            margin:15px 0;
+        }
+
+        h3 {
+            font-size:16px;
+        }
+
+        .container {
+            max-width:710px;
+            background:#FFF;
+            overflow:hidden;
+            margin:0 auto;
+            padding:20px;
+        }
+
+        .banner {
+            font-size:13px;
+            font-family:Arial;
+            margin:0 auto 20px -16px;
+        }
+
+        .banner ul {
+            margin-left:-20px;
+        }
+
+        .post h3 {
+            font-size:2.8em;
+            font-weight:400;
+            margin-left:-5px;
+            margin-bottom:40px;
+            line-height:1.1em;
+        }
+
+        .post,blockquote {
+            font-size:16px;
+            line-height:210%;
+            font-family:'Open Sans','Helvetica Neue',Arial,"Hiragino Sans GB",sans-serif;
+            color:#535354;
+        }
+
+        .post a img {
+            display:inline-block;
+            margin:10px auto;
+        }
+
+        .post {
+            margin-top:10px;
+            margin-bottom:30px;
+            padding:5px;
+        }
+
+        .author {
+            margin-bottom:23px;
+            color:#bababa;
+            font-size:14px;
+        }
+
+        .author img {
+            width:30px;
+            height:30px;
+            margin-right:5px;
+        }
+
+        .more .title {
+            font-size:1.1em;
+        }
+
+        .forb {
+            text-align:right;
+            font-size:1.2em;
+            margin-bottom:20px;
+        }
+
+        .footer {
+            text-align:center;
+            margin-top:30px;
+            font-size:12px;
+            color:#bababa;
+        }
+
+        .date {
+            color:#bababa;
+        }
+
+        blockquote {
+            border-left:1px dashed #bababa;
+        }
+
+        blockquote p {
+            font-weight:400;
+            line-height:2.3em;
+            font-size:14px;
+            font-style:italic;
+            padding-left:10px;
+        }
+
+        .paginator {
+            font-size:12px;
+            color:#bababa;
+            text-align:center;
+        }
+
+        .banner a:hover {
+            color:#000;
+            text-decoration:none;
+            background:#FFF;
+        }
+
+        .post a:hover {
+            color:#00b893;
+            text-decoration:none;
+            margin:0 2px;
+            padding:3px;
+        }
+
+        .comments a:link {
+            color:#00b893;
+            text-decoration:none;
+            margin:0 2px;
+            padding:3px;
+        }
+
+        .comments a:visited {
+            color:#00b893;
+            text-decoration:none;
+        }
+
+        a:link {
+            text-decoration:none;
+        }
+
+        .post strong {
+            color:#000;
+        }
+
+        ul,ol {
+            list-style:none;
+            font-size:12px;
+            margin:0;
+        }
+
+        ol {
+            margin-left:-35px;
+        }
+
+        ol li {
+            margin-bottom:10px;
+        }
+
+        code {
+            border:1px dashed #ccc;
+            font-family:monospace;
+            color:#000;
+            background:#FFF;
+            font-size:14px;
+        }
+
+        pre {
+            background:#f4f4f4;
+            border:none;
+            line-height:3.2em;
+            margin-bottom:25px;
+            padding:10px;
+        }
+
+        pre code {
+            border:none;
+            font-size:14px;
+        }
+
+        .quote {
+            font-size: 20px;
+            color: black;
+        }
+
+        .source {
+        }
+
+        .post img {
+            max-width:600px;
+            margin:0 auto;
+        }
+
+        .inside {
+            font-size:12px;
+            text-align:right;
+            color:#bababa;
+        }
+
+        ol li span {
+            margin-right:5px;
+            margin-left:5px;
+        }
+
+        ul li {
+            float:left;
+            margin-right:30px;
+        }
+
+        .html_photoset,.photoset,.tumblr_video_container {
+            text-align:center;
+        }
+
+        .clearfix:before,.clearfix:after {
+            display:table;
+            content:" ";
+        }
+
+        .clearfix:after {
+            clear:both;
+        }
+
+        .pull-right {
+            float:right;
+        }
+
+        .pull-left {
+            float:left;
+        }
+
+        .hide {
+            display:none!important;
+        }
+
+        .show {
+            display:block!important;
+        }
+
+        .invisible {
+            visibility:hidden;
+        }
+
+        .text-hide {
+            font:0/0 a;
+            color:transparent;
+            text-shadow:none;
+            background-color:transparent;
+            border:0;
+        }
+
+        .affix {
+            position:fixed;
+        }
+
+        .albumart img {
+            max-width:256px;
+        }
+
+        .post p,.post ul {
+            margin-bottom:30px;
+        }
+
+        .footer a:link,.paginator a:link,.inside a:link,ol li a:link {
+            color:#bababa;
+            text-decoration:none;
+            margin:0 2px;
+            padding:3px;
+        }
+
+        .footer a:visited,.paginator a:visited,.inside a:visited,ol li a:visited {
+            color:#bababa;
+            text-decoration:none;
+        }
+
+        .title a:link,.title a:visited {
+            color:#000;
+            text-decoration:none;
+        }
+
+        .banner a:link,.banner a:visited {
+            color:#3a3a3a;
+            text-decoration:none;
+        }
+
+        .post a:visited,.post a:link {
+            color:gray;
+            text-decoration:none;
+            margin:0 2px;
+            padding:3px;
+        }
+
+        ::selection,::-moz-selection {
+            background:#F7FAFB;
+        }
+
+        iframe,.tumblr_video_container {
+            margin:0 auto;
+        }
+
+        .buttons {
+            text-align: right;
+            float: right;
+            margin: 10px 0 10px 0;
+        }
+
+        .btn {
+            margin-bottom: 20px;
+        }
+
+        {CustomCSS}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+        <div class="banner clearfix">
+            <ul class="nav nav-pills">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+
+        <div class="main clearfix">
+            <div id="posts">
+            {block:Posts}
+                <div class="post">
+                {block:Text}
+                    {block:Title}
+                    <h3>{Title}</h3>
+                    {/block:Title}
+                    {Body}
+                {/block:Text}
+                {block:Photo}
+                    <h3>Photo</h3>
+                    <p class="photoset">{LinkOpenTag}<img src='{PhotoURL-700}' alt='{PhotoAlt}'/>{LinkCloseTag}</p>
+                    {block:Caption}
+                        <p>{Caption}</p>
+                    {/block:Caption}
+                {/block:Photo}
+                {block:Photoset}
+                    <h3>Photoset</h3>
+                    {Photoset-700}
+                    {block:Caption}
+                        <p>{Caption}</p>
+                    {/block:Caption}
+                {/block:Photoset}
+                {block:Quote}
+                    <h3>Quote</h3>
+                    <p class='quote'>"{Quote}"</p>
+                    {block:Source}
+                        <p clas="source">{Source}</p>
+                    {/block:Source}
+                {/block:Quote}
+                {block:Link}
+                    <h3>Link</h3>
+                    <a href='{URL}' class='link' {Target}>{Name}</a>
+                    {block:Description}
+                        <p>{Description}</p>
+                    {/block:Description}
+                {/block:Link}
+                {block:Chat}
+                    {block:Title}
+                        <h3>{Title}</h3>
+                    {/block:Title}
+                    <table cellpadding='0' cellspacing='0' width='100%' border='0' class='chat'>
+                        {block:Lines}
+                            <tr class='{Alt}'>
+                                {block:Label}
+                                    <td class='label'>{Label}</td>
+                                {/block:Label}
+                                <td>{Line}</td>
+                            </tr>
+                        {/block:Lines}
+                    </table>
+                {/block:Chat}
+                {block:Audio}
+                    <h3>Audio</h3>
+                    <div class='audio'>
+                        <p>{AudioPlayerWhite}</p>
+                        <p>{FormattedPlayCount} Plays</p>
+                    </div>
+                    {block:Caption}
+                        <p>{Caption}</p>
+                    {/block:Caption}
+                {/block:Audio}
+                {block:Video}
+                    <h3>Video</h3>
+                    {Video-700}
+                    {block:Caption}
+                        <p>{Caption}</p>
+                    {/block:Caption}
+                {/block:Video}
+                </div>
+            {block:Date}
+            <div class='inside clearfix'>
+                <div class='notes'>
+                    <span class="date">{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}</span>
+                    <a href='{Permalink}#notes'>{NoteCountWithLabel}</a>
+                </div>
+                <br class='clear' />
+            </div>
+            {block:PostNotes}
+                <a name="notes"></a>
+                <div class='postinfo'>&nbsp;</div>
+                <div class='postwrapper'>
+                    <div class='postcontainer'>
+                        <div class='postnote'>
+                            {block:Posts}
+                                {PostNotes}
+                            {/block:Posts}
+                        </div>
+                    </div>
+                </div>
+            {/block:PostNotes}
+            <div class="clearfix btn">
+            <div class="buttons clearfix">
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul>
+            </div>
+            {/block:Date}
+        </div>
+            {/block:Posts}
+            </div>
+        </div>
+
+        <div class="paginator">
+            {block:NextPage}
+                <a href='{NextPage}'>&#171; {lang:Older}</a>
+            {/block:NextPage}
+            {block:PreviousPage}
+                {block:NextPage}
+                    |
+                {block:NextPage}
+            {/block:PreviousPage}
+            {block:PreviousPage}
+                <a href='{PreviousPage}'>{lang:Newer} &#187;</a>
+            {/block:PreviousPage}
+        </div>
+
+        <div class="footer">
+            CopryRight <a href="http://soundbbg.tumblr.com/" target="_blank">GuoJing</a> {CopyrightYears}
+        </div>
+
+        </div>
+    </body>
+</html>
